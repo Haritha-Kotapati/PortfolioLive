@@ -77,7 +77,7 @@ main {
 
 .banner-section {
     margin: 0px;
-    margin-bottom: 250px;
+    margin-bottom: 180px;
     display: inline-block;
     position: relative;
     width: 100%;
@@ -88,9 +88,10 @@ img {
     width: 100%;
 }
 
-.banner-section button {
+.banner-section button a {
     font-family: 'Mulish', sans-serif;
     font-size: 1em;
+    text-decoration: none;
 }
 
 .column-left {
@@ -312,7 +313,7 @@ img {
     display: grid;
     grid-template-columns: 45% 45%;
     grid-template-rows: 180px 50px 50px;
-    gap: 60px;
+    gap: 30px;
     padding: 60px 90px;
     background-color: var(--primay-color);
 }
@@ -337,11 +338,16 @@ img {
     color: var(--secondary-color);
     text-decoration: none;
 }
-
+@media screen and (max-width:980px){
+    .banner-section {
+        margin: 0px;
+        margin-bottom: 120px;
+    }
+}
 
 @media screen and (max-width:768px) {
     main {
-        padding: 0 60px;
+        padding: 0 30px;
     }
 
     .banner-section {
@@ -349,7 +355,7 @@ img {
     }
 
     .column-right {
-        padding: 30px;
+        padding: 20px;
         width: 80%;
         position: unset;
     }
@@ -389,10 +395,14 @@ img {
 
     .grid-container {
         display: block;
+        padding: 40px 30px;
     }
 }
 
 @media screen and (max-width:586px) {
+    .main{
+        padding: 0 30px;
+    }
     .row {
         display: block;
     }
